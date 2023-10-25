@@ -7,7 +7,6 @@ $testo = isset($_POST['testo']) ? $_POST['testo'] : "Nessun Testo";
 
 $lngttxt =  strlen($testo);
 
-$newtesto = " ";
 
 
 function noswear($testo)
@@ -24,6 +23,9 @@ function noswear($testo)
     }
     echo noswear("I see bad words coming!");
 }
+
+$newtesto = noswear($testo);
+
 ?>
 
 
