@@ -1,3 +1,16 @@
+<?php
+
+
+$testo =isset($_GET['testo']) ? $_GET['testo'] : "Nessun Testo";
+
+
+
+
+
+?>
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,10 +22,11 @@
 </head>
 <body>
     
-<div class="container">
+<div class="container my-5">
     <div class="row">
         <div class="col-6">
             <h2>Atterraggio Form in GET</h2>
+            <h2>Risposta: <?php echo $testo ?></h2>
         </div>
     </div>
 </div>
